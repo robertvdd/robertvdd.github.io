@@ -5,4 +5,4 @@
 layout: home
 ---
 
-Test
+This site is a work in progress, and I hope to have it set up with various research projects by late August/early September.

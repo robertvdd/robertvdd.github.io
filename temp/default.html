@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<style>
+  .trigger {
+    position: relative;
+    display: inline-block;
+  }
+
+  .active {
+    font-weight: bold;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px
+        z-index: 1;
+  }
+
+  .trigger:hover .dropdown-content {
+    display: block;
+  }
+</style>
+
+
+
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+    
+  <body>
+
+    <!-- {%- include header.html -%} 
+    
+    The following header was constructed using a combination of the original (Minima theme) code for the top menu, 
+    while also adapting the dynamic menu as explained at:
+    https://mycyberuniverse.com/jekyll-bootstrap-dynamic-navigation-highlighting-active-element.html
+
+    -->
+
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+          <nav id="navbar" class="site-nav">
+              {% assign links = site.data.menu %}
+              {% for link in links %}
+                  {% assign class = nil %}
+                  {% if link.url %}
+                    {% assign use_url = link.url %}
+                    {% if page.url == link.url %}
+                        {% assign class = 'active' %}
+                    {% endif %}
+                  {% else %}
+                    {% assign use_url = page.url %}
+                  {% endif %}
+                  {% if link.sublinks %}
+                      <div class="trigger">
+                        <a class="page-link" href="{{ site.url }}{{ site.baseurl }}{{ use_url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title | escape }}</a>
+                        <div class="dropdown-content">
+                        {% for sublink in link.sublinks %}
+                            {% if sublink.title == 'separator' %}
+                                <div role="separator" class="divider"></div>
+                            {% else %}
+                                {% assign class = nil %}
+                                {% if page.url == sublink.url %}
+                                  {% assign class = 'active' %}
+                                {% endif %}
+                                <a class="page-link {{ class }}" href="{{ site.url }}{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title | escape }}</a>
+                            {% endif %}
+                        {% endfor %}
+                        </div>
+                      </div>
+                      {% else %}
+                          <a class="page-link {{ class }}" href="{{ site.url }}{{ site.baseurl }}{{ link.url }}">{{ link.title | escape }}</a>
+                      {% endif %}
+                  {% endfor %}
+            </nav>
+          </div>
+        </header>
+
+
+
+   
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

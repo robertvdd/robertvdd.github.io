@@ -3,19 +3,18 @@ layout: page
 title: About
 ---
 
-I am currently a 4th year undergraduate student at NC State University, double-majoring in Applied Mathematics and Meteorology.
-This website showcases a few different research projects I've been a part of over my undergraduate career. In the future, I may also add other various side projects or new research as I continue my education.
 
-Contact Info:
+<div style="column-count: 2;">
 
-Email:
-[rjvander@ncsu.edu](mailto:rjvander@ncsu.edu)
+<p>I am currently a 4th year undergraduate student at NC State University, double-majoring in Applied Mathematics and Meteorology.
+This website showcases a few different research projects I've been a part of over my undergraduate career. In the future, I may also add other various side projects or new research as I continue my education.</p>
 
-GitHub: 
-[github](https://github.com/robertvdd)
+<p>Contact Info:</p>
 
-[Download my Resume][resume]
+<p>Email: <a href="mailto:rjvander@ncsu.edu">rjvander@ncsu.edu</a></p>
 
-[resume]: {{site.url}}/downloads/Robert_VDD_Resume_Website.pdf
-[jekyll-organization]: https://github.com/jekyll
 
+<p><a href="https://github.com/robertvdd">Github</a></p>
+
+<img style="float: right; width: 14em;" src="/figures/about_pic.jpeg">
+</div>

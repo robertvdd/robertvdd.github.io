@@ -3,11 +3,27 @@ layout: page
 title: About
 ---
 
+<style>
 
-<div style="column-count: 2;">
+.column {
+	float: left;
+/*	width: 50%;*/
+	padding: 10px;
+}
 
-<p>I am currently a 4th year undergraduate student at NC State University, double-majoring in Applied Mathematics and Meteorology.
-This website showcases a few different research projects I've been a part of over my undergraduate career. In the future, I may also add other various side projects or new research as I continue my education.</p>
+.inline-img {
+	float: right;
+	margin-left: 25px;
+	max-width: 12em;
+}
+</style>
+
+
+<div class="column">
+<img class="inline-img" src="/figures/about_pic.jpeg">
+
+<p>I am currently a 4th year undergraduate student at North Carolina State University, double-majoring in Applied Mathematics and Meteorology.
+This website showcases a few different research projects I've done while an undergraduate. In the future, I may also make blog posts for various side projects or add new research topics as I continue my education.</p>
 
 <p>Contact Info:</p>
 
@@ -16,5 +32,4 @@ This website showcases a few different research projects I've been a part of ove
 
 <p><a href="https://github.com/robertvdd">Github</a></p>
 
-<img style="float: right; width: 12em;" src="/figures/about_pic.jpeg">
 </div>

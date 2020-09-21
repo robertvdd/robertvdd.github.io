@@ -14,41 +14,25 @@ math_engine: mathjax
 
 Near the air-sea interface, two processes that transfer heat between the ocean and atmosphere are:
 
-1. **Sensible Heat Flux**: A difference between the air temperature and sea surface temperature (SST) leads to a transfer of energy by conduction 
-2. **Latent Heat Flux**: A difference between the humidity of the air and the saturation humidity of a parcel of air at SST leads to a net moisture transfer. The phase transition between liquid and gas carries latent heat with it. 
+1. **Sensible Heat Flux**: A difference between the air temperature and sea surface temperature (SST) leads to a direct transfer of energy. 
+2. **Latent Heat Flux**: A defecit in the humidity of the air leads to a net evaporation (in the tropics). The phase transition between liquid and gas carries latent heat with it. 
 
-Both of these processes are enhanced by a shear across the air-sea interface (which is primarily a function of surface winds, as ocean currents are weak). The relationships between surface winds and these heat fluxs is complicated, but can be approximated by a "bulk formula." For example, the bulk formula of latent heat flux $$F_q$$ is:
+In the tropics, heat fluxes between the ocean and atmosphere play a crucial role on virtually every timescale, from supporting mesoscale (convective) systems to larger-scale climatological balances. Heat fluxes can be estimated using a "bulk formula" such as the following for latent heat flux: 
 
 $$F_q \equiv C_q U(q - q_s)$$ 
 
-In the tropics, heat fluxes between the ocean and atmosphere play a crucial role on virtually every timescale. On meso- and synoptic timescales, these fluxes add heat and moisture to the boundary layer, fueling deep convection and convective systems (including tropical cyclones). On climatological timescales, these fluxes are part of a net energy budget that, in the tropics, transfers heat from the ocean into the atmosphere.
+Mesoscale systems can generate large amounts of heat flux in a short time-period. This research project focused on how mesoscale systems can _enhance_ the net heat transfer from the ocean to the atmosphere on larger timescales:
+1. **Intraseasonal scales**, where variations in the tropics are largely driven by wind patterns (e.g. the MJO)
+2. **Seasonal scales**, where variations are driven by the annual migration of large-scale atmospheric features (e.g. ITCZ, monsoon).
+3. **Interannual scales**, where variations in the tropics are driven by well-known air-sea coupled oscillations (e.g. ENSO)
 
-My project focused on quantifying heat flux on timescales between these two extremes, namely:
-1. **Intraseasonal scales**, where we found variations in heat fluxes are determined exclusively by wind patterns (which are in turn related to the MJO). 
-2. **Seasonal scales**, where we found variations in heat fluxes are determined by the migration of large-scale atmospheric features such as the ITCZ and monsoon.
-3. **Interannual scales**, where we found variations in heat fluxes are determined by well-known air-sea coupled oscillations (e.g. ENSO), but that these relationships are quite spatially confined despite the global atmospheric implications of these interannual variations. 
+<h3>Global Tropical Moored Buoy Array</h3>
 
+For this project, I used data from the Global Tropical Moored Buoy Array (GTMBA), managed by the Pacific Marine Environmental Laboratory (PMEL). GTMBA consists of three sub-arrays: TAO/TRITON in the Pacific Ocean, PIRATA in the Atlantic, and RAMA in the Indian Ocean. Combined, there have been 126 buoys deployed and/or currently in use:
 
+<img alt="Blue: RAMA, Red: TAO/TRITON, Green: PIRATA"  src="/figures/basin_3view_plot.png">
 
-<h3>What is Mesoscale Enhancement?</h3>
-
-Imagine taking hourly wind measurements at a single location. Suppose that the beginning of the day, winds are steadily out of the north, but that halfway through the day, they weaken and shift to coming out of the east. How do you calculate the daily average of the windspeed at this location? There are to methods I'll consider:
-1. Calculating the windspeed $$U = \sqrt{u^2 + v^2}$$ at each hour, and then averaging (called the "scalar average")
-2. Calculating the daily average of $$u$$ and $$v$$, then plugging into the formula for $$U$$ above.
-
-The vector average sounds like a more accurate average from a geometric perspective. But in reality, the scalar average gives gives the true windspeed, while the vector average returns an underestimate. This happens because, to put it simply, the formula for calculating $$U$$ is nonlinear, and thus the addition and scalar multiplication involved in the operation of calculating a daily average does not commute with the operation of calculating the scalar windspeed. 
-
-Mesoscale Enhancement is given by:
-
-$$ME_q \equiv \left<C_q U\Delta q\right> - C_q(V,\left<q\right>,\ldots)V\left<\Delta q\right>$$
-
-<h3>Calculating Latent Heat Flux</h3>
-
-For this project, I used data from the Global Tropical Moored Buoy Array (GTMBA), managed by the Pacific Marine Environmental Laboratory (PMEL). GTMBA consists of three sub-arrays: TAO/TRITON in the Pacific Ocean, PIRATA in the Atlantic, and RAMA in the Indian Ocean. Combined, there have been 126 buoys deployed and/or currently in use, shown in the following map:
-
-\*Map
-
-with some locations having data available in the 1990s or earlier. but this extensive coverage still yielded a median of 11\*? years of data per buoy, on average.
+Some of these buoys were installed in the 1990s or earlier, providing more than a decade's worth of high-resolution, hourly measurements across the ocean! This large amount of data allows for some very robust climatological descriptions of tropical heat fluxes to be built.
 
 <h3>About this Project</h3>
 

@@ -21,8 +21,7 @@
 title: Robert van der Drift 
 email: rjvander@ncsu.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  This website showcases my various coding projects, from undergraduate 
-  and internship research to personal curiousities.
+  Click on the links below to explore some of my research projects. I'll begin making blog posts soon.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://robertvdd.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: robertvdd 

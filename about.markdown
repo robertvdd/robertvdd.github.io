@@ -16,5 +16,5 @@ This website showcases a few different research projects I've been a part of ove
 
 <p><a href="https://github.com/robertvdd">Github</a></p>
 
-<img style="float: right; width: 14em;" src="/figures/about_pic.jpeg">
+<img style="float: right; width: 12em;" src="/figures/about_pic.jpeg">
 </div>

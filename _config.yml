@@ -26,11 +26,28 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://robertvdd.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: robertvdd 
+version: "1.0"
 
 # Build settings
-theme: minima
+
 plugins:
-  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+# Optimize Jekyll
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+
+sass:
+  sass_dir: _sass
+  style: :compressed
 
 # The following are required by GitHub Pages:
 lsi: false
@@ -42,6 +59,7 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

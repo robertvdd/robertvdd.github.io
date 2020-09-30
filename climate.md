@@ -19,7 +19,7 @@ title: Climate Statement
 </style>
 
 
-Since high school, I've been involved in different organizations and campaigns relating to climate activism. I believe it's important, as an aspiring scientist and also as someone who believes in the importance of civic engagement, to ensure that my field of study is respected and properly interpreted by governments, universities, and any other decision-making institutions that have influence over our day-to-day lives. The decisions these groups make should be informed by accurate climate science, and my advocacy is motivated by ensuring that happens.
+Since high school, I've been involved in different organizations and campaigns relating to climate activism. I believe it's important, as an aspiring scientist and also as someone who believes in the importance of civic engagement, to ensure that my field of study is respected and properly interpreted by governments, universities, and any other decision-making institutions that have influence over our day-to-day lives. The decisions these groups make should be informed by accurate climate science, and my advocacy is focused on making this happen.
 
 <div class="column">
   <img class="inline-img" style="max-width: 20%;" src="/figures/crcc.jpg">

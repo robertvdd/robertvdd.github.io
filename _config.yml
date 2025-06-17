@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -21,44 +21,19 @@
 title: Robert van der Drift 
 email: rvddrift@mit.edu 
 description: >- # this means to ignore newlines until "baseurl:"
-  Click on the links below to explore some of my research projects. Blog posts coming soon. 
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://robertvdd.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: robertvdd 
-version: "1.0"
+  PhD Candidate, MIT<br>
+  Weather and Climate Dynamics
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "robertvdd.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: 
+github_username:  
 
 # Build settings
-
+remote_theme: pages-themes/minimal
 plugins:
-  - jekyll-gist
-  - jekyll-paginate
-  - jekyll-seo-tag
-
-# Optimize Jekyll
-exclude:
-  - .editorconfig
-  - .git
-  - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE.md
-  - README.md
-
-sass:
-  sass_dir: _sass
-  style: :compressed
-
-# The following are required by GitHub Pages:
-lsi: false
-safe: true
-incremental: false
-highlighter: rouge
-gist:
-  noscript: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
-
+  - jekyll-remote-theme
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -78,5 +53,4 @@ kramdown:
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
-#   - vendor/ruby//theme
-
+#   - vendor/ruby/

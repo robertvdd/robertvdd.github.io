@@ -3,15 +3,27 @@
 
 @import "{{ site.theme }}";
 
-h1 { 
-	font-size:24px;
-}
-
 .wrapper { 
 	width: 1060px;
 }
 
-header {
+header, footer {
+	width: 360px;
+	font-size: 18px;
+}
+
+hr { color: green; }
+
+.toc {
 	text-align: end;
-	font-size:16px;
+}
+
+section {
+	font-size: 16px;
+	width: 580px;
+}
+
+.article {
+	padding-left: 2em;
+	text-indent:-2em;
 }

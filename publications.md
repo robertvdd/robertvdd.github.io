@@ -9,7 +9,7 @@ layout: default
 
 <h3>2025</h3>
 <p class="article">
-	 <span class="title">Dependence of convective precipitation extremes on near-surface relative humidity.</span> <b>van der Drift, R.J.</b> and O'Gorman, P.A., 2025. <i>Journal of Climate</i> (under review).
+	 <a href="https://pog.mit.edu/src/van_der_drift_precipiation_extremes_relative_humidity_2025.pdf">Dependence of convective precipitation extremes on near-surface relative humidity.</a> <b>van der Drift, R.J.</b> and O'Gorman, P.A., 2025. <i>Journal of Climate</i> (under review)
 </p>
 
 <br>
@@ -19,7 +19,7 @@ layout: default
 
 <h3>2024</h3>
 <p class="article">
-<span class="title">The sensitivity of convective precipitation extremes to relative humidity and the need for a multivariate scaling rate.</span> AGU Fall Meeting <i>(Dec. 2024)</i>
+    <span class="title">The sensitivity of convective precipitation extremes to relative humidity and the need for a multivariate scaling rate.</span> AGU Fall Meeting <i>(Dec. 2024)</i>
 </p>
 
 <p class="article">
